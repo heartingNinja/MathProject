@@ -5,13 +5,8 @@ string date = DateTime.Now.ToString();
 
 List<string> games = new();
 
-string name = GetName();
+string name = Helpers.GetName();
 
 menu.ShowMenu(name, date);
 
-string GetName()
-{
-    Console.WriteLine("Type Name");
-    string name = Console.ReadLine();
-    return name;
-}
+
